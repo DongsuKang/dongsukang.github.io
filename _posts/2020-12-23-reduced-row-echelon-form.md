@@ -69,7 +69,7 @@ $$\begin{array}{lcl} 3x_1 + 2x_2 + 3x_3 - 2x_4 & = & 1 \\ x_1 + x_2 + x_3 & = & 
 위와 같은 형태는 쉽게 볼 수 있는 연립 일차 방정식(system of linear equations)이다.
 위 연립 일차 방정식은 방정식의 계수로 된 행렬과 미지수들로 구성되어 있는 벡터의 곱으로 나타낼 수도 있는데 이는 아래와 같다.
 
-$$A\mathbf{x = b}, \ A = \begin{pmatrix} 3 & 2 & 3 & -2 \\ 1 & 1 & 1 & 0 \\ 1 & 2 & 1 & -1 \ \end{pmatrix} , \
+$$A\mathbf{x = b}, \ A = \begin{pmatrix} 3 & 2 & 3 & -2 \\ 1 & 1 & 1 & 0 \\ 1 & 2 & 1 & -1 \ \end{pmatrix} ,
 \mathbf{x} = \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} , \
 \mathbf{b} = \begin{pmatrix} 1 \\ 3 \\ 2 \\ \end{pmatrix}$$
 
@@ -83,7 +83,7 @@ rank(A) = 3이고, rank(A\|b) = 3 이므로, 해가 존재하는 것을 알 수 
 
 행렬(augmented matrix) A\|b의 행간소사다리꼴은 아래와 같다.
 
-$$\left( \begin{array}{cccc|c} 1 & 0 & 1 & 0 & 1 \\ 0 & 1 & 0 & 0 & 2 \\ 0 & 0 & 0 & 1 & 3  \end{array} \right)$$
+$$\left( \begin{array}{cccc|c} 1 & 0 & 1 & 0 & 1 \\ 0 & 1 & 0 & 0 & 3 \\ 0 & 0 & 0 & 1 & 2  \end{array} \right)$$
 
 그리고 이 행렬은 다음 연립 일차 방정식에 대응한다.
 
