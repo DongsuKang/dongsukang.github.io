@@ -12,7 +12,7 @@ use_math : true
 comments : true
 
 sitemap :
-changefreq : daily
+changefreq : weekly
 date: 2020-12-20
 last_modified_at: 2020-12-20
 ---
