@@ -22,7 +22,7 @@ last_modified_at: 2020-12-25
 
 차원 정리는 일종의 nullity와 rank의 관계를 표현하는 정리라고 할 수 있다. 여기서 nullity 와 rank의 정의는 각각 N(T)와 R(T)의 차원이고, kernel과 image의 정의는 아래와 같다.
 
-> ** 정의 ** 벡터공간 V,W와 선형 변환 T : V $\to$ W 에 대하여
+> **정의** 벡터공간 V,W와 선형 변환 T : V $\to$ W 에 대하여
 > - 영공간(null space 또는 kernel) 은 $T(x) = 0$인 $x \in V$를 원소로 가지는 집합이고 N(T)라 표기하나. 집합으로 나타내면 N(T) = {$x \in V \ \| \ T(x) = 0$}
 > - 상공간(range 또는 image)은 T의 함숫값을 원소로 가지는 W의 부분집합이고, R(T)라 표기한다. 집합으로 나타내면 R(T) = {$T(x) \ \| \ x \in V$}
 
