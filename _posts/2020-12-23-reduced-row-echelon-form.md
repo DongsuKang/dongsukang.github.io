@@ -3,7 +3,7 @@ title:  "행간소사다리꼴(Reduced Row Echelon Form)"
 excerpt: "행렬의 형태 중 하나인 행간소사다리꼴에 대해 공부해보자."
 
 categories:
-  - Linear-Algebra
+  - Linear Algebra
 
 toc: true
 toc_sticky: true

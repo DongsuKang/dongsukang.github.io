@@ -3,7 +3,7 @@ title:  "차원정리(dimension theorem)"
 excerpt: "선형대수의 차원 정리에 대해 공부해보자."
 
 categories:
-  - Linear-Algebra
+  - Linear Algebra
 
 toc: true
 toc_sticky: true
