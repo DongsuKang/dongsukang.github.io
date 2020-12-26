@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 
 comments : true
-
+image : true
 sitemap :
 changefreq : daily
 date: 2020-12-26
@@ -35,5 +35,3 @@ last_modified_at: 2020-12-26
 ## 1장 웹 데이터 분석 2.0의 새로운 세계
 
 1장의 여러 내용 중에 이 책을 사길 참 잘했다 하는 그림은 바로 아래 그림이다.
-
-![chapter1_img01](C:/Users/Ower/dongsukang.github.io/_data/img/chapter1_img01.png)
