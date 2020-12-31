@@ -76,7 +76,7 @@ $$A\mathbf{x = b}, \ A = \begin{pmatrix} 3 & 2 & 3 & -2 \\ 1 & 1 & 1 & 0 \\ 1 & 
 \mathbf{x} = \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} ,
 \mathbf{b} = \begin{pmatrix} 1 \\ 3 \\ 2 \\ \end{pmatrix}$$
 
-우선 이 연립일차 방정식의 해가 rank(A) 와 rank(A\|b) 같은지를 체크하여 해가 존재하는 지를 확인해 보자(해의 존재를 확인하기 위해 rank(A) 와 rank(A\|b) 같은지를 확인하는 이유는 간단하다. 해가 존재 한다는 것은 $A\mathbf{x = b}$ 를 A의 column vector 들과 $\mathbf{x}$ 의 선형결합이 $R(L_A)$ 에 존재한다는 것과 동일하기 때문이다.)
+우선 이 연립일차 방정식의 해가 rank(A) 와 rank(A\|b) 같은지를 체크하여 해가 존재하는 지를 확인해 보자(해의 존재를 확인하기 위해 rank(A) 와 rank(A\|b) 같은지를 확인하는 이유는 간단하다. 해가 존재 한다는 것은 $A\mathbf{x = b}$ 를 A의 column vector 들과 $\mathbf{x}$ 의 선형결합이 $R(L_A)$ 에 존재한다는 것과 동일하기 때문이다.
 rank(A) = 3이고, rank(A\|b) = 3 이므로, 해가 존재하는 것을 알 수 있다. 보통 이러한 연립 일차 방정식을 풀기 위해서는 손으로 풀어도 상당히 번거로운 계산을 해야 하지만, 이 행렬을 행간소사다리꼴로 만든다면 어떨까?
 
 우선 아래와 같은 사실들을 미리 알고 있어야 한다.
