@@ -22,7 +22,7 @@ last_modified_at: 2020-12-31
 
 ## Rank Theorem이란?
 
-Rank theorem은 임의의 행렬의 row과 column은 차원이 같은 부분공간을 생성한다는 뜻이다. **이는 결국 A의 row rank와 column rank가 같다는 것을 의미한다.** 때문에 rank theorem의 의미는 명확하지만, 행렬의 랭크는 row를 기준으로 하든 column을 기준으로 하든 상관이 없다는 뜻이다. 어차피 그 둘은 항상 같기 때문이다.
+Rank theorem은 임의의 행렬의 row과 column은 차원이 같은 부분공간을 생성한다는 뜻이다. **이는 결국 A의 row rank와 column rank가 같다는 것을 의미한다.** 때문에 rank theorem의 의미는 명확한데 행렬의 랭크는 row를 기준으로 하든 column을 기준으로 하든 상관이 없다는 뜻이다. 어차피 그 둘은 항상 같기 때문이다.
 
 여기서 과거의 나였다면 2 가지 납득이 가지 않을 만한 포인트가 있다.
 
@@ -33,6 +33,22 @@ Rank theorem은 임의의 행렬의 row과 column은 차원이 같은 부분공�
 직관적으로 row rank는 행이 생성하는 공간의 차원을, column rank는 열이 생성하는 공간이라고 느낄 수 있다. 조금 더 자세하게 얘기해보면...
 
 ## 행렬의 row와 column이 생성하는 부분 공간
+
+> **Theorem** 임의의 행렬의 랭크는 일차독립인 열의 최대 개수와 같다. 행렬의 랭크는 그 열에 의해 생성된 부분공간의 차원이다.
+
+행렬 A가 m * n 형태의 행렬이라면, $rank(A) = rank(L_A) = dim(R(L_A))$가 성립한다. 행렬 A의 정의역에 해당하는 $\mathbb{F}^n$의 표준 순서 기저를 $\mathfrak{B}$ 라고 하면,
+span$(\mathfrak{B})$가 $L_A$의 image와 같은데, 수식으로 표현하면 아래와 같다.
+
+$$R(L_A) = \text{span}L_A(\mathfrak{B}) = \text{span} \{ L_A(\mathbf{e_1}), L_A(\mathbf{e_2}), \cdots, L_A(\mathbf{e_n}) \}$$
+
+이 때, 행렬 A의 j번째 column을 $a_j$라 하면, left multiplication transformation의 정의에 따라 $L_A(\mathbf{e_j}) = A\mathbf{e_j} = a_j$ 임을 알 수 있다.
+
+$$rank(A) = dim(R(L_A)) = dim(\text{span} \{ a_1, a_2, \cdots, a_n) \})$$
+
+따라서 A의 column을 벡터로 span 하면 치역의 부분공간을 생성한다.  
+
+위와 비슷하게 $A^t$를 생각해보면, $rank(A) = rank(A^t)$임을 알 수 있는데, 이러한 row와 column의 벡터들이 만드는 부분공간들과 관련된
+notation들을 정리해보면 아래와 같이 쓸 수 있다.
 
 $$
 A \in M_{n \times n}(\mathbb{R}),
@@ -71,7 +87,7 @@ $$\text{nullity}(L_A) + \text{rank}(L_A) = n \iff \text{nullity}(L_A) + (\text{c
 
 이를 보이기 위해 행렬 A의 행간소사다리꼴을 생각해보자. 역시나 이전 포스팅에서 다룬 행간소사다리꼴의 내용 중에 임의의 행렬은 대응하는 유일한 행간소사다리꼴을 가지고 있다는 사실을 적은 바 있다.(증명은 없지만, [행간소사다리꼴 관련 이전 포스팅 참고](https://dongsukang.github.io/linear%20algebra/reduced-row-echelon-form/))
 
-다음으로, 행렬 A가 4 * 5 행렬이고, 행렬 A의 행간소사다리꼴 형태를 아래 행렬 R이라 하자.
+예를 들어, 행렬 A가 4 * 5 행렬이고, 행렬 A의 행간소사다리꼴 형태를 아래 행렬 R이라 하자.
 
 $$R =
 \begin{pmatrix}
