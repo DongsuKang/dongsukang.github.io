@@ -84,14 +84,17 @@ T.O.P 같은 느낌이었는데, 아무래도 에세이나 소설과는 다른 �
 
 위 지표들을 사용하는 예시를 들어주었는데, 몇 가지의 예시는 기존에 알고 있던 내용이라 새롭지 않았고, 기억에 남는 예시를 정리해서 옮겨보겠다.
 
-![visit_to_purchase](/assets/img/visits_to_purchase.png)
-(이미지 출처 : https://www.michaelwhitaker.com/2010/07/12/visits-to-purchase-revisited-in-google-analytics/)
+<br>
+
+<p align="center"><img src="/assets/img/visits_to_purchase.png"></p>
+<center>(이미지 출처 : https://www.michaelwhitaker.com/2010/07/12/visits-to-purchase-revisited-in-google-analytics/)</center>  
+
+<br>
 
 visit to purchase는 막연하게 알고 있던 개념인데, 한 번의 구매까지 몇 번의 방문을 하는지 현황을 보여주는 리포트이다.
-
 이미지의 1 visit 에 77.49%의 수치가 기록되어있는데, 이 의미는 첫 번째 방문 시 구매하는 경우가 전체 구매 수 중 78%에 해당하는 것을 의미한다. (첫 번째 방문에 이렇게 구매를 하는 경우가 많은 것은 굉장히 의아한 일인데, 그 이유는 이미지 상의 from start of last campign 문구와 연관이 있다. 이 부분은 적고자 하는 책의 내용과 달라 딱히 적진 않겠지만, 이미지 출처의 포스팅을 참고하면 해당 설명을 볼 수 있다.)
 
-이러한 의미를 가지고 있는 리포트가 visit to purchase 이라는 의미로만 사용하려 한다. 아비나쉬 카우쉭의 순서대로 보면 위 리포트는 이런식으로 해석할 수 있다.
+이러한 의미를 가지고 있는 리포트가 visit to purchase 이라는 뜻정도로만 사용하려 한다. 아비나쉬 카우쉭이 제안한 순서대로 보면 위 리포트는 이런식으로 해석할 수 있다.
 
 - visit to purchase는 무엇인가? : 웹 사이트 분석 도구는 유저의 첫 번째 방문부터 쿠키 등을 기반으로 하여 유저마다 고유한 식별자를 붙인다. 때문에, 이 유저의 첫 번째 방문부터 기록할 수 있는데(물론 쿠키 삭제나 디바이스를 여러 개 사용하는 등의 이슈로 정확히 측정할 수 없다.) 위에서 언급한 바와 같이 한 번 구매하는데 있어 몇 번 방문 하는지 현황을 보여준다. 일반적인 전자상거래에서는 구매가 기준이 되겠지만, 전환율도 그러하듯 구매라는 목적을 다른 회원 가입 등의 다른 목적으로 바꿔도 상관은 없을 것 같다.
 
@@ -106,8 +109,12 @@ visit to purchase는 막연하게 알고 있던 개념인데, 한 번의 구매�
 ### 총합이 아닌 고객 행동 주시하기
 방문 수 나 페이지 뷰수 같은 '총합'이 아닌, 고객의 행동에 관한 지표를 주의 깊게 살펴보라는 의미이다. 고객의 행동에 관한 지표의 예시로는 depth of visit을 예시로 들었다.
 
-![depth of visit](/assets/img/depth_of_visit.png)
-(이미지 출처 : https://www.kaushik.net/avinash/i-got-no-ecommerce-how-do-i-measure-success/)
+<br>
+
+<p align="center"><img src="/assets/img/depth_of_visit.png"></p>
+<center>(이미지 출처 : https://www.kaushik.net/avinash/i-got-no-ecommerce-how-do-i-measure-success/)</center>  
+
+<br>
 
 1회 방문 시에 몇 번의 페이지 뷰를 발생 시키는지 확인하는 이 수치는, 유저의 활동성 정도를 확인할 수 있다고 볼 수 있겠다.(이외에도 고객의 행동을 표현하는 지표로 이미지의 출처를 참고 하면 좋을 것 같다. 구글링해서 들어갔는데 알고보니 저자의 홈페이지 였다.)
 
