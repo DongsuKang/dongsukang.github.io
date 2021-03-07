@@ -1,5 +1,5 @@
 ---
-title:  "A/B 테스팅이란?(1)"
+title:  "A/B 테스팅이란?"
 excerpt: "T 아카데미 A/B 테스팅 관련 강의 수강 후 내용 정리"
 
 categories:
