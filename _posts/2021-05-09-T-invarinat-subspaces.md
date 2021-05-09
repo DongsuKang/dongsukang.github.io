@@ -39,8 +39,10 @@ last_modified_at: 2021-05-09
 1. 대표적으로는 {$\mathbf{0}$}, 즉, 제로 벡터만을 포함한 집합이 있다. 모든 벡터 공간에 제로 벡터가 포함 되어 있는 것은 자명한 사실이고, 벡터 공간의 선형성으로 인해, 제로 벡터만 있는 집합은 부분 공간이자 곧 불변 부분 공간이다.(선형 연산자에 제로 벡터를 넣을 경우 제로 벡터가 나오기 때문에)
 
 2. 또 다른 예시로는 커널(kernel)이 있다.
+
 <p align="center"><img src="/assets/img/t-invariant-subspace/t-invariant-subspace-example.png"></p>
 <center>(이미지 출처 : http://mathonline.wikidot.com/invariant-subspaces)</center>
+
 
 커널은 그 정의에 따르면, 정의역의 원소 중 선형연산자의 결과값이 모두 제로 백터와 대응 되는 원소들의 집합이다. (즉, 다음과 같다. $\{\mathbf{v} \in V | T\mathbf{v = 0}\}$)
 
@@ -52,7 +54,7 @@ last_modified_at: 2021-05-09
 
 역시 교재 내의 정의를 먼저 살펴보자.
 
-> ** 정의 ** 벡터공간 V의 선형연산자 T와 영이 아닌 벡터 $\mathbf{x} in V$ 에 대하여 다음과 같은 부분공간 W를 $\mathbf{x}$ 에 의해 성생된 (V의) **T-순환 부분공간(T-cyclic subspace)** 이라 한다.
+> **정의** 벡터공간 V의 선형연산자 T와 영이 아닌 벡터 $\mathbf{x} in V$ 에 대하여 다음과 같은 부분공간 W를 $\mathbf{x}$ 에 의해 성생된 (V의) **T-순환 부분공간(T-cyclic subspace)** 이라 한다.
 > $$W = span({\mathbf{x}, T\mathbf{x}, T^2\mathbf{x}, \ldots}) $$
 
 위 내용을 토대로 정의된 순환 부분 공간은 위에 언급 되었던 불변 부분공간이기도 한데, 그 내용은 아래와 같다.
@@ -67,5 +69,5 @@ $$\mathbf{w} \in W, \mathbf{w} = \sum_{i=1}^\infty a_iT^i\mathbf{x} \rightarrow 
 항상 느끼는 것이지만, 공부는 오래 하는데, 내용 정리해보면 별 건 없다..
 
 
-> ** Reference **
+> **Reference**
 >\- 스티븐 H.프리드버그, 아놀드 J.인셀, 로렌스 E, 스펜스, 『프리드버그 선형대수학 5판』,한빛 아카데미(2020)
