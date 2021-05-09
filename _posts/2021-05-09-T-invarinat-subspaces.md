@@ -8,6 +8,7 @@ categories:
 toc: true
 toc_sticky: true
 
+use_math : true
 comments : true
 image : true
 sitemap :
@@ -39,14 +40,11 @@ last_modified_at: 2021-05-09
 1. 대표적으로는 {$\mathbf{0}$}, 즉, 제로 벡터만을 포함한 집합이 있다. 모든 벡터 공간에 제로 벡터가 포함 되어 있는 것은 자명한 사실이고, 벡터 공간의 선형성으로 인해, 제로 벡터만 있는 집합은 부분 공간이자 곧 불변 부분 공간이다.(선형 연산자에 제로 벡터를 넣을 경우 제로 벡터가 나오기 때문에)
 
 2. 또 다른 예시로는 커널(kernel)이 있다.
+  <p align="center"><img src="/assets/img/t-invariant-subspace/t-invariant-subspace-example.png"></p>
+  <center>(이미지 출처 : http://mathonline.wikidot.com/invariant-subspaces)</center>  
 
-<p align="center"><img src="/assets/img/t-invariant-subspace/t-invariant-subspace-example.png"></p>
-<center>(이미지 출처 : http://mathonline.wikidot.com/invariant-subspaces)</center>
-
-
-커널은 그 정의에 따르면, 정의역의 원소 중 선형연산자의 결과값이 모두 제로 백터와 대응 되는 원소들의 집합이다. (즉, 다음과 같다. $\{\mathbf{v} \in V | T\mathbf{v = 0}\}$)
-
-커널 역시 부분 공간이므로, 제로 벡터를 포함하고 있고, 커널의 정의에 따라 커널에서 뽑은 임의의 원소는 모두 제로 벡터와 매핑 된다. 즉, 불변 부분공간의 정의를 모두 만족하고 있으므로, 커널도 불변 부분 공간이다.
+- 커널은 그 정의에 따르면, 정의역의 원소 중 선형연산자의 결과값이 모두 제로 백터와 대응 되는 원소들의 집합이다. (즉, 다음과 같다. $\{\mathbf{v} \in V : T\mathbf{v = 0}\}$)
+- 커널 역시 부분 공간이므로, 제로 벡터를 포함하고 있고, 커널의 정의에 따라 커널에서 뽑은 임의의 원소는 모두 제로 벡터와 매핑 된다. 즉, 불변 부분공간의 정의를 모두 만족하고 있으므로, 커널도 불변 부분 공간이다.
 
 3. 마지막 예시로는 고윳값과 고유 벡터 챕터 에서 등장한 개념인만큼 고유 공간(eigen space) 또한 불변 부분 공간이다.
 
@@ -55,11 +53,13 @@ last_modified_at: 2021-05-09
 역시 교재 내의 정의를 먼저 살펴보자.
 
 > **정의** 벡터공간 V의 선형연산자 T와 영이 아닌 벡터 $\mathbf{x} in V$ 에 대하여 다음과 같은 부분공간 W를 $\mathbf{x}$ 에 의해 성생된 (V의) **T-순환 부분공간(T-cyclic subspace)** 이라 한다.
-> $$W = span({\mathbf{x}, T\mathbf{x}, T^2\mathbf{x}, \ldots}) $$
+>
+> $$ W = span({\mathbf{x}, T\mathbf{x}, T^2\mathbf{x}, \ldots})$$
 
 위 내용을 토대로 정의된 순환 부분 공간은 위에 언급 되었던 불변 부분공간이기도 한데, 그 내용은 아래와 같다.
 
-W를 $\mathbf{x} \in $ V 에 의해 생성된 순환 부분공간이라고 하자
+W를 $\mathbf{x} \in $ V 에 의해 생성된 순환 부분공간이라고 하자  
+
 $$\mathbf{w} \in W, \mathbf{w} = \sum_{i=1}^\infty a_iT^i\mathbf{x} \rightarrow T\mathbf{w} = \sum_{i=1}^\infty a_iT^{i+1}\mathbf{x} \in W$$
 
 순환 부분 공간 W에서 임의의 원소 w를 뽑았고, w를 기저의 벡터들을 이용해 선형 결합으로 표현하였다(화살표 왼쪽). 그리고 Tw 의 선형 결합 또한 W의 기저의 벡터들의 선형 결합으로 표현할 수 있다는 사실을 알았다.(화살표 오른쪽) 즉, Tw가 W에 속해 있다는 것을 알았다. 따라서 순환 부분 공간 W는 불변 부분 공간이기도 하다.
