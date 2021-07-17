@@ -189,9 +189,9 @@ INNER JOIN
     COUNT(DISTINCT(id)) AS total_count
   FROM session
   GROUP BY 1) AS t2
-ON t1.joindate = t2.joindate
-
   )
+ON t1.joindate = t2.joindate
+ORDER BY t1.joindate, t1.diffday
 {% endhighlight %}
 
 ## 마치며..
