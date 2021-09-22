@@ -4,6 +4,7 @@ excerpt: "리텐션의 개념 및 쿼리를 이용한 리텐션 구하기"
 
 categories:
   - SQL
+  - Growth Hacking
 
 toc: true
 toc_sticky: true
