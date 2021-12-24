@@ -20,7 +20,7 @@ title                    : "Blog for Data"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dongsu Kang"
-description              : "An amazing website."
+description              : ""
 url                      : "https://dongsukang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -97,7 +97,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Analyst"
   location         : "South Korea"
-  email            :
+  email            :  "dongsukang91@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
