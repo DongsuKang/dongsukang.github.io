@@ -1,4 +1,4 @@
----
+ㅡ---
 title:  "몫 공간(Quotient space)"
 excerpt: "선형대수학의 몫 공간에 대해 정리해보자"
 
