@@ -37,17 +37,52 @@ last_modified_at: 2022-06-19
     - 사립, 공립 대학교 중 어떤 대학교를 가는 것이 소득에 영향을 얼마나 끼치는지를 파악한다고 가정해보자. 
         - 이 때, 처치 변수는 사립 또는 공립 대학교 여부를 더미 변수로 만들고, 결과 변수를 소득이라고 볼 수 있다. 
     - $A_i$를 임의의 누락변수라고 하면 long regression 의 회귀 모형은 아래와 같다. 
-    $$\begin{aligned} 
-    Y_i = \alpha^l + \beta^l P_i + \gamma A_i + e^l_i
+    $$\begin{align} 
+    Y_i = \alpha^l + \beta^l P_i + \gamma A_i + e^l_i \\
     \end{align}$$
         - 여기서 $\alpha$ 는 절편, $\beta$는 처치 변수의 계수, $P_i$는 처치 변수, $\gamma$ 는 누락 변수의 계수, $e^l_i$의 잔차이다.
     - short regression 의 회귀 모형은 아래와 같다. 
-    $$\begin{aligned} Y_i = \alpha^s + \beta^s P_i + e^s_i \end{align}$$
+    $$\begin{align} Y_i = \alpha^s + \beta^s P_i + e^s_i \end{align} \\ $$
     - 윗 첨자에 있는 l 과 s 의 차이는, 각각 long, short regression 의 계수라는 의미이다.
     - 만약 $\beta^s$ 가 20000이고, $\beta^l$ 가 10000이라면, 20000-10000만큼의 차이가 바로 OVB의 효과이다. 
         - 이 책에서의 예제에서 이 차이는, 소득이 1만 달러 이상 차이나는 것이므로, 크게 영향을 끼침을 알 수 있다. 
 
 ## long, short rgression 에서의 공식적인 연결 고리 
-- 
+
+> OVB = short regression 에서의 $P_i$의 효과 - long regression 에서의 $P_i$ 의 효과 = $\beta^s - \beta^l = \pi_1 \times \gamma$
+
+-  여기서 $\pi_1$는 아래 공식에서 $P_i$의 계수이다. 
+
+<!-- 3번 수식 -->
+
+$$\begin{align} 
+A_i = \pi_0 + \pi_1 P_i + u_i
+\end{align}$$
+
+- OVB 를 책의 또다른 수식으로 표현해보자. 
+
+<!-- 4,5번 수식 -->
+
+$$\begin{align} 
+
+lnY_i = \alpha + \beta P_i + \sum^{150}_{j=1} \gamma_j GROUP_{ji} + \delta_1 SAT_i + \delta_2 lnPI_i + e_i \\ 
+lnY_i = \alpha^l + \beta^l P_i + \sum^{150}_{j=1} \gamma^l_j GROUP_{ji} + \delta_1^l SAT_i + \delta_2^l lnPI_i + \lambda FS_i + e_i
+
+\end{align}$$
+
+- 4, 5번 수식의 차이는 $\lambda FS_i$ 이다. 이는 교재에서는 가족의 명수이다. 
+    - 자녀가 많을수록, 학비 부담이 심해 사립대학교 선택에 영향을 주었을 수도 있다는 내용이다. 
+
+- 이 때의 OVB 는 아래와 같다.
+
+<!-- 6번 수식 -->
+
+$$\begin{align} 
+OVB = \beta - \beta^l = \pi_1 \times \lambda
+\end{align}$$
+
+- 여기서의 $\pi_1$은 3번 수식과 같은 회귀 모형에서 나왔다고 볼 수 있다. 
+
+
 
 
