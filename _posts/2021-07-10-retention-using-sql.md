@@ -23,7 +23,7 @@ last_modified_at: 2021-07-17
 최근 리텐션과 관련된 자료를 만들 일이 있어 공부한 내용을 정리해본다. 공부를 위해 구글링을 하다가 앰플리튜드의 블로그 글을 읽게 되었는데, 리텐션을 정리한 글 중에는 최고봉 인 것 같아 개념에 대한 내용을 굳이 내가 중복해서 적을 필요는 없을 것 같다. 정확히는 앰플리튜드를 국내에 공급하는 ab180이라는 회사가 앰플리튜드의 글을 번역한 것이라 할 수 있겠다.
 
 
-<p align="center"><img src="/assets/img/retention/ab180_blog_1.png"></p>
+<p align="center"><img src="/assets/img/retention/ab180_blog_1.PNG"></p>
 <center>(이미지 출처 : https://blog.ab180.co/category/amplitude)</center>  
 
 <!-- ![image](/assets/img/retention/ab180_blog_1.png)

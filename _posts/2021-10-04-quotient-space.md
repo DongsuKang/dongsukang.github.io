@@ -1,4 +1,4 @@
-ㅡ---
+---
 title:  "몫 공간(Quotient space)"
 excerpt: "선형대수학의 몫 공간에 대해 정리해보자"
 
@@ -24,7 +24,7 @@ last_modified_at: 2021-10-08
 ## coset이란?
 몫 공간에 대한 설명 이전에 앞서 coset에 대한 정리가 필요하다. 몫 공간의 벡터의 형태는 모두 이 coset의 형태를 하고 있기 때문이다. coset은 국내 교재에서는 '잉여류'라고 하는데, 잉여류라고 할 때보다는, coset이라고 할 때 그 의미가 더 와 닿는 것 같아서, coset라고 적도록 하겠다.
 
-어떤 벡터공간 V가 있고, 이 V의 부분공간을 W라고 하자. 벡터 공간 V에서 임의의 벡터 $\mathbf{v}$ 가 있을 때, $\mathbf{v} + W := \{ \mathbf{v} + \mathbf{w} \ |  \ \mathbf{w} \in W \}$ 인 벡터 집합을 coset 이라고 한다.
+어떤 벡터공간 V가 있고, 이 V의 부분공간을 W라고 하자. 벡터 공간 V에서 임의의 벡터 $\mathbf{v}$ 가 있을 때, $\mathbf{v} + W := \\{ \mathbf{v} + \mathbf{w} \ |  \ \mathbf{w} \in W \\}$ 인 벡터 집합을 coset 이라고 한다.
 그리고 이 때, V에서 임의 선택한 벡터 $\mathbf{v}$ 를 coset을 대표한다고 해서 representative라고 한다. (아마 coset이라는 set이 임의 선택한 벡터에 종속되어 있기 때문이 아닐까 한다.)
 
 정의를 보면 알겠지만, coset은 V에서 어떤 벡터를 가지고 오느냐에 따라 그 값이 바뀌는, 즉, $\mathbf{v}$에 종속적일 수 밖에 없는 정의를 가지고 있다.
@@ -60,13 +60,13 @@ coset의 덧셈, 스칼라곱 정의를 기반으로 coset을 벡터로 하는 �
 
 벡터 공간 V의 부분 공간 W의 기저를 $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k$ 라고 하자.(W의 dimension은 k이다.). 그리고 basis extention thorem을 통해 W의 기저를 확장하여, V의 기저를 만든다. 그 형태는 다음과 같다.
 
-$$\{ \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k, \mathbf{v}_{k+1}, \mathbf{v}_{k+2}, \ldots, \mathbf{v}_{n} \}$$
+$$\\{ \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k, \mathbf{v}_{k+1}, \mathbf{v}_{k+2}, \ldots, \mathbf{v}_{n} \\}$$
 
 당연히 V의 dimension은 n이다.
 
 이 때 V/W의 기저는 다음과 같다.
 
-$$\{ \mathbf{v}_{k+1} + W, \mathbf{v}_{k+2} + W, \ldots, \mathbf{v}_{n} + W\}$$
+$$\\{ \mathbf{v}_{k+1} + W, \mathbf{v}_{k+2} + W, \ldots, \mathbf{v}_{n} + W\\}$$
 
 ### 몫 공간의 null space
 
