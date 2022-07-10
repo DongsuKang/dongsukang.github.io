@@ -53,6 +53,32 @@ last_modified_at: 2022-07-09
 - 즉, 우리의 데이터의 적당히 큰, 일부 데이터를 계속 뽑는 것은 결국 모집단에서 데이터를 계속 뽑는 것이라는 이야기 이다.
 - 그렇게 우리는 bootstrap을 반복할 때 마다 모집단의 분포에 가까워진다고 볼 수 있다.
 
+- 아래 그림을 통해 세부적으로 이해할 수 있다. 
+
+<p align="center"><img src="/assets/img/bootstrap_working_reason_image_1.png"></p>
+<center>(이미지 출처 : https://bookdown.org/gregcox7/ims_psych/foundations-bootstrapping.html)</center>
+
+- 먼저 그림의 Intuitively 를 보자 
+  - 이 부분은 직관적인 이해를 돕기 위해 만들어진 듯 하다.
+  - 모집단에서 샘플을 뽑았고, 이 샘플 하얀색 공 4개와 빨간색 공 3개로 이루어져 있다.(모집단에서 샘플을 제외한 공의 색깔은 알 수 없다.)
+  - 7개의 하얀색, 빨간색이 섞인 공의 샘플을 통해 모집단을 추정하면, Estimated Population Based on Sample 과 같은 형태가 될 것이다. 
+  - 이 모집단에서 다시 7개의 샘플을 뽑는 작업을 여러 번 반복한다.(즉, resample 한다.)
+  - 각각의 7개 짜리 샘플들에서 나온 통계량을 기록한다. 여기서는, 하얀색 공이 나올 비율이라고 한다.
+  - 이 기록들이 쌓이고 쌓여서, 하나의 표본 분포를 만들어낸다. 
+- 다음은 In Practice 를 보자
+  - 이 부분은 실제로 코드단에서 구현되는 것을 그림으로 설명한 듯 하다
+  - Intuitively와 다른 점은 처음 모집단에서 뽑은 샘플을 통해 stimated Population Based on Sample 을 만들지는 않는다. 바로 resample 을 한다. 
+  - 그리고 각각의 resample 된 샘플을에서 나온 통계량을 기록한다.
+  - 이 기록들이 쌓이고 쌓여서, 하나의 표본 분포를 만들어낸다. 
+  - __그 결과, Intuitively 와 파트처럼 stimated Population Based on Sample 을 만들고 resample 을 하는 것과 같은 표본 분포가 만들어진다.__
+
+
+<p align="center"><img src="/assets/img/bootstrap_working_reason_image_2.png"></p>
+<center>(이미지 출처 : https://bookdown.org/gregcox7/ims_psych/foundations-bootstrapping.html)</center>
+
+- 이렇게 resample 된 샘플들에서 얻은 통계량의 분포로 만들어낸 표본 분포에서 우리는 bootstrap percentile confidence interval 을 얻을 수 있다. 
+- 해석하면, 위의 이미지에서는 모수에서 샘플을 100번 뽑을 때, 하얀색 공의 비율이 0%부터 11.3% 사이인 경우가 95% 나온다는 의미이다.
+
 ## BootStrap 파이썬 코드로 구현하기
 ```
 results = []
