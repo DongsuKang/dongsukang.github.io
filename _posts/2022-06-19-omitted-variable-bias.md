@@ -51,7 +51,7 @@ last_modified_at: 2022-06-19
 
 > OVB = short regression 에서의 $P_i$의 효과 - long regression 에서의 $P_i$ 의 효과 = $\beta^s - \beta^l = \pi_1 \times \gamma$
 
--  여기서 $\pi_1$는 아래 공식에서 $P_i$의 계수이다. 
+-  여기서 $\pi_1$는 아래 공식에서 $P_i$의 계수이고, $\gamma$는 long regression 에서의 $A_i$의 계수다. 
 
 <!-- 3번 수식 -->
 
@@ -81,7 +81,8 @@ $$\begin{align}
 OVB = \beta - \beta^l = \pi_1 \times \lambda
 \end{align}$$
 
-- 여기서의 $\pi_1$은 3번 수식과 같은 회귀 모형에서 나왔다고 볼 수 있다. 
+- 여기서의 $\pi_1$은 3번 수식과 같이 $FS_i = \pi_0 + \pi_1 FS_i + u_i$ 에서의 $\pi_1$ 이라고 볼 수 있다. 
+- $\lambda$ 는 $FS_i$의 회귀 계수이다.
 
 
 
