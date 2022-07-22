@@ -373,6 +373,7 @@ plt.show()
 - 베타 분포의 PDF
 
 $$\frac{x^{\alpha-1}(1-x)^{\beta - 1}}{B(\alpha, \beta)} \ where \ B(\alpha, \beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)}$$
+
 - 베타 분포의 PDF 에 대한 해석
   - 분모의 $B(\alpha, \beta)$는 normalizing 상수 이므로 무시 
   - 분자의 x와 1-x 꼴은 이항분포에서 나온 꼴
