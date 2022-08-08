@@ -117,7 +117,7 @@ $$\hat{\beta_0} = \frac{1}{n}{\Sigma Y_i - \hat{\beta_1}\Sigma X_i} = \bar{Y} - 
 $\Sigma X_i Y_i$ 는 아래와 같이 정리 할 수 있다.
 
 $$\begin{aligned}
-\Sigma X_i Y_i & = (\bar{Y} - \hat{\beta_0}\bar{X})n\bar{X} + \hat{\beta_1}\Sigma X_i^2 \\
+\Sigma X_i Y_i & = (\bar{Y} - \hat{\beta_1}\bar{X})n\bar{X} + \hat{\beta_1}\Sigma X_i^2 \\
 & = (\Sigma X_i^2 - n \bar{X}^2) \hat{\beta_1} + n\bar{X}\bar{Y}
 \end{aligned}$$
 
