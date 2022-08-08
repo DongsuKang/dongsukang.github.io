@@ -122,7 +122,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$\hat{\beta_1} = \frac{\Sigma X_iY_i - n\bar{X}\bar{Y}}{\Sigma X^2 - n\bar{X}^2} =
-\frac{\Sigma(X_i - \bar{X})(Y_i - \bar{Y})}{\Sigma(X_i - \bar{x})^2} = \frac{S_{XY}}{S_{XX}}
+\frac{\Sigma(X_i - \bar{X})(Y_i - \bar{Y})}{\Sigma(X_i - \bar{X})^2} = \frac{S_{XY}}{S_{XX}}
 $$
 
 따라서, 최소제곱법을 이용해 절편항과 기울기를 구하면 아래와 같다.
