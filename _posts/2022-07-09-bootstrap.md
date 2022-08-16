@@ -24,7 +24,7 @@ last_modified_at: 2022-07-09
 
 ## BootStrap 은 어떻게 하는 걸까?
 
-<p align="center"><img src="/assets/img/bootstrap_image.png"></p>
+<p align="center"><img src="/assets/img/bootstrap/bootstrap_1.png"></p>
 <center>(이미지 출처 : https://arifromadhan19.medium.com/resampling-methods-a-simple-introduction-to-the-bootstrap-method-3a36d076852f)</center>
 
 1. 가지고 있는 데이터에서 N 개의 샘플을 랜덤 추출한다. 이 때 복원 추출로 뽑는다.
@@ -55,7 +55,7 @@ last_modified_at: 2022-07-09
 
 - 아래 그림을 통해 세부적으로 이해할 수 있다. 
 
-<p align="center"><img src="/assets/img/bootstrap_working_reason_image_1.png"></p>
+<p align="center"><img src="/assets/img/bootstrap/bootstrap_2.png"></p>
 <center>(이미지 출처 : https://bookdown.org/gregcox7/ims_psych/foundations-bootstrapping.html)</center>
 
 - 먼저 그림의 Intuitively 를 보자 

@@ -30,8 +30,3 @@ last_modified_at: 2022-07-22
 - 블로그 
   - https://datascienceschool.net/intro.html
   - https://towardsdatascience.com/beta-distribution-intuition-examples-and-derivation-cf00f4db57af
-
-
-
-
-
