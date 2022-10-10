@@ -16,6 +16,10 @@
     {% include mathjax_support.html %}
     {% endif %}
 
+    {% if site.google_tag.ua %}
+    {% include gtag_head.html %}
+    {% endif %}
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN210EK7K2"></script>
     <script>
@@ -30,6 +34,11 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% if site.google_tag.ua %}
+    {% include gtag_body.html %}
+    {% endif %}
+    
+    
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
